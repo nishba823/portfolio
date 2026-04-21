@@ -1,71 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #f4f4f4;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-    }
-    .project {
-      background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #333;
-      color: white;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Section */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>Nishba Arshad</h1>
-  <p>Frontend Developer</p>
+    <h2>My Portfolio</h2>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>I am learning web development and building projects.</p>
-</section>
+<div class="hero">
+    <h1>Hello, I'm Nishba 👋</h1>
+    <p>Web Developer | Designer | Learner</p>
+</div>
 
-<section>
-  <h2>Projects</h2>
+<div class="section">
+    <div class="card">
+        <h3>About Me</h3>
+        <p>I am learning web development and building modern websites using HTML, CSS and JavaScript.</p>
+    </div>
 
-  <div class="project">
-    <h3>Project 1</h3>
-    <p>Short description</p>
-  </div>
+    <div class="card">
+        <h3>Projects</h3>
+        <p>✔ Portfolio Website<br>
+           ✔ Landing Page Design<br>
+           ✔ Practice Web Apps</p>
+    </div>
 
-  <div class="project">
-    <h3>Project 2</h3>
-    <p>Short description</p>
-  </div>
-
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email:nishbaarshad65@gmail.com.com</p>
-</section>
+    <div class="card">
+        <h3>Contact</h3>
+        <p>Email: yourname@email.com</p>
+    </div>
+</div>
 
 <footer>
-  <p>© 2026 Nishba Arshad</p>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
 </footer>
 
 </body>
