@@ -3,63 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>My Dream Portfolio</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-}
-
-/* Header */
-header {
-    background: #111;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
     color: white;
-    padding: 25px;
-    text-align: center;
 }
 
-/* Hero Section */
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+nav h2 {
+    margin: 0;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+/* Hero */
 .hero {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    color: white;
-    padding: 80px 20px;
     text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at top, #1e293b, #0f172a);
 }
 
 .hero h1 {
-    font-size: 40px;
-    margin: 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #38bdf8;
 }
 
 .hero p {
+    color: #94a3b8;
     font-size: 18px;
-    margin-top: 10px;
 }
 
-/* Section */
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* Sections */
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .card {
-    background: white;
+    background: rgba(255,255,255,0.05);
     padding: 20px;
-    margin: 15px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
 }
 
 /* Footer */
 footer {
-    background: #111;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px;
+    color: #64748b;
+    margin-top: 50px;
 }
 </style>
 
@@ -67,36 +115,46 @@ footer {
 
 <body>
 
-<header>
-    <h2>My Portfolio</h2>
-</header>
+<nav>
+    <h2>MyDream</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
 
 <div class="hero">
-    <h1>Hello, I'm Nishba 👋</h1>
-    <p>Web Developer | Designer | Learner</p>
+    <h1>Hello, I'm <span>Nishba</span></h1>
+    <p>Future Web Developer | UI Designer | Learner</p>
+    <button class="btn">View My Work</button>
 </div>
 
 <div class="section">
-    <div class="card">
-        <h3>About Me</h3>
-        <p>I am learning web development and building modern websites using HTML, CSS and JavaScript.</p>
-    </div>
+    <h2>About Me</h2>
+    <p style="color:#94a3b8; max-width:600px; margin:auto;">
+        I build modern, responsive and creative websites using HTML, CSS and JavaScript.  
+        I love designing clean UI and learning new technologies.
+    </p>
+</div>
 
-    <div class="card">
-        <h3>Projects</h3>
-        <p>✔ Portfolio Website<br>
-           ✔ Landing Page Design<br>
-           ✔ Practice Web Apps</p>
-    </div>
-
-    <div class="card">
-        <h3>Contact</h3>
-        <p>Email: yourname@email.com</p>
+<div class="section">
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">Portfolio Website</div>
+        <div class="card">Landing Page</div>
+        <div class="card">Mini Web Apps</div>
     </div>
 </div>
 
+<div class="section">
+    <h2>Contact</h2>
+    <p style="color:#94a3b8;">Email: yourname@email.com</p>
+</div>
+
 <footer>
-    <p>© 2026 My Portfolio | All Rights Reserved</p>
+    © 2026 My Dream Portfolio
 </footer>
 
 </body>
