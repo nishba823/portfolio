@@ -11,9 +11,10 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: white;
+    scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* NAV */
 nav {
     display: flex;
     justify-content: space-between;
@@ -22,32 +23,31 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-nav h2 {
-    margin: 0;
-    color: #38bdf8;
-}
-
+nav h2 { color: #38bdf8; }
 nav a {
     color: white;
-    margin-left: 20px;
+    margin-left: 15px;
     text-decoration: none;
     opacity: 0.8;
 }
+nav a:hover { opacity: 1; }
 
-nav a:hover {
-    opacity: 1;
-}
-
-/* Hero */
+/* HERO */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: radial-gradient(circle at top, #1e293b, #0f172a);
+}
+
+.hero img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 45px;
 }
 
 .hero span {
@@ -56,31 +56,27 @@ nav a:hover {
 
 .hero p {
     color: #94a3b8;
-    font-size: 18px;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn {
-    padding: 12px 25px;
+    padding: 10px 20px;
+    margin: 10px;
     background: #38bdf8;
     border: none;
     border-radius: 8px;
-    color: black;
-    font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
+    font-weight: bold;
 }
+.btn:hover { background: #0ea5e9; }
 
-.btn:hover {
-    background: #0ea5e9;
-}
-
-/* Sections */
+/* SECTIONS */
 .section {
     padding: 60px 20px;
     text-align: center;
 }
 
+/* CARDS */
 .cards {
     display: flex;
     justify-content: center;
@@ -96,21 +92,43 @@ nav a:hover {
     border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
 }
-
 .card:hover {
     transform: translateY(-5px);
     border-color: #38bdf8;
 }
 
-/* Footer */
+/* SKILLS */
+.skill {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.bar {
+    background: #1e293b;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.fill {
+    height: 10px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     color: #64748b;
-    margin-top: 50px;
+}
+
+/* TYPE ANIMATION */
+.typing {
+    font-size: 20px;
+    color: #94a3b8;
 }
 </style>
-
 </head>
 
 <body>
@@ -118,39 +136,65 @@ footer {
 <nav>
     <h2>MyDream</h2>
     <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<div class="hero">
-    <h1>Hello, I'm <span>Nishba</span></h1>
-    <p>Future Web Developer | UI Designer | Learner</p>
-    <button class="btn">View My Work</button>
+<!-- HERO -->
+<div class="hero" id="home">
+    <img src="https://i.imgur.com/0y0y0y0.png" alt="profile">
+
+    <h1>Hello, I'm <span id="name">Nishba</span></h1>
+    <p class="typing">Web Developer | UI Designer | Learner</p>
+
+    <button class="btn">View Work</button>
+    <button class="btn">Hire Me</button>
 </div>
 
-<div class="section">
+<!-- ABOUT -->
+<div class="section" id="about">
     <h2>About Me</h2>
     <p style="color:#94a3b8; max-width:600px; margin:auto;">
-        I build modern, responsive and creative websites using HTML, CSS and JavaScript.  
-        I love designing clean UI and learning new technologies.
+        I am a passionate web developer learning modern technologies.
+        I love building clean, responsive and creative websites.
     </p>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
+    <h2>Skills</h2>
+    <div class="skill">
+        HTML
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+
+        CSS
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+
+        JavaScript
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
     <h2>Projects</h2>
     <div class="cards">
         <div class="card">Portfolio Website</div>
         <div class="card">Landing Page</div>
-        <div class="card">Mini Web Apps</div>
+        <div class="card">To-Do App</div>
     </div>
 </div>
 
-<div class="section">
+<!-- CONTACT -->
+<div class="section" id="contact">
     <h2>Contact</h2>
     <p style="color:#94a3b8;">Email: yourname@email.com</p>
+
+    <button class="btn">Instagram</button>
+    <button class="btn">WhatsApp</button>
 </div>
 
 <footer>
