@@ -1,205 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Dream Portfolio</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-/* NAV */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-}
-
-nav h2 { color: #38bdf8; }
-nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    opacity: 0.8;
-}
-nav a:hover { opacity: 1; }
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #38bdf8;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 45px;
-}
-
-.hero span {
-    color: #38bdf8;
-}
-
-.hero p {
-    color: #94a3b8;
-}
-
-/* BUTTONS */
-.btn {
-    padding: 10px 20px;
-    margin: 10px;
-    background: #38bdf8;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.btn:hover { background: #0ea5e9; }
-
-/* SECTIONS */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    width: 250px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-}
-
-/* SKILLS */
-.skill {
-    width: 60%;
-    margin: auto;
-    text-align: left;
-}
-
-.bar {
-    background: #1e293b;
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.fill {
-    height: 10px;
-    background: #38bdf8;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #64748b;
-}
-
-/* TYPE ANIMATION */
-.typing {
-    font-size: 20px;
-    color: #94a3b8;
-}
-</style>
-</head>
-
-<body>
-
 <nav>
-    <h2>MyDream</h2>
-    <div>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+  Logo | Home | About | Skills | Projects | Contact
 </nav>
 
-<!-- HERO -->
-<div class="hero" id="home">
-    <img src="https://i.imgur.com/0y0y0y0.png" alt="profile">
+<section class="hero">
+  Profile Image
+  Hello, I'm Nishba
+  Web Developer | WordPress Developer | BSIT Graduate
 
-    <h1>Hello, I'm <span id="name">Nishba</span></h1>
-    <p class="typing">Web Developer | UI Designer | Learner</p>
+  [View Projects] [Hire Me]
+</section>
 
-    <button class="btn">View Work</button>
-    <button class="btn">Hire Me</button>
-</div>
+<section class="about">
+  About Me
+  Short introduction
+</section>
 
-<!-- ABOUT -->
-<div class="section" id="about">
-    <h2>About Me</h2>
-    <p style="color:#94a3b8; max-width:600px; margin:auto;">
-        I am a passionate web developer learning modern technologies.
-        I love building clean, responsive and creative websites.
-    </p>
-</div>
+<section class="skills">
+  HTML 90%
+  CSS 85%
+  JavaScript 60%
+  WordPress 80%
+</section>
 
-<!-- SKILLS -->
-<div class="section">
-    <h2>Skills</h2>
-    <div class="skill">
-        HTML
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
+<section class="projects">
+  SmartCommute
+  Online Shopping Store
+  Visa Information Website
+</section>
 
-        CSS
-        <div class="bar"><div class="fill" style="width:85%"></div></div>
-
-        JavaScript
-        <div class="bar"><div class="fill" style="width:60%"></div></div>
-    </div>
-</div>
-
-<!-- PROJECTS -->
-<div class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-        <div class="card">Portfolio Website</div>
-        <div class="card">Landing Page</div>
-        <div class="card">To-Do App</div>
-    </div>
-</div>
-
-<!-- CONTACT -->
-<div class="section" id="contact">
-    <h2>Contact</h2>
-    <p style="color:#94a3b8;">Email: yourname@email.com</p>
-
-    <button class="btn">Instagram</button>
-    <button class="btn">WhatsApp</button>
-</div>
+<section class="contact">
+  Email
+  Instagram
+  WhatsApp
+</section>
 
 <footer>
-    © 2026 My Dream Portfolio
+  © 2026 Nishba Arshad
 </footer>
-
-</body>
-</html>
